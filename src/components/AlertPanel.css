@@ -1,0 +1,120 @@
+.alert-panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+}
+
+.alert-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.alert-panel-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.alert-form {
+  padding: var(--spacing-md);
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.alert-form .form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.alert-form .form-group:last-of-type {
+  margin-bottom: var(--spacing-lg);
+}
+
+.alert-form label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.alert-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  overflow-y: auto;
+  padding-right: var(--spacing-xs);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.alert-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.alert-item:hover {
+  background: rgba(15, 23, 42, 0.5);
+  border-color: var(--glass-border);
+}
+
+.alert-unread {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+  gap: var(--spacing-sm);
+}
+
+.alert-user {
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+}
+
+.alert-message {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.alert-footer-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  gap: var(--spacing-sm);
+}
+
+.btn-full {
+  width: 100%;
+}
