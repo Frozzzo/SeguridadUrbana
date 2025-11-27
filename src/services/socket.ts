@@ -1,13 +1,12 @@
 import { io, Socket } from 'socket.io-client';
-
-const SOCKET_URL = 'http://localhost:3001';
+import { API_URL } from '../config/api.config';
 
 class SocketService {
   private socket: Socket | null = null;
 
   connect() {
     if (!this.socket) {
-      this.socket = io(SOCKET_URL, {
+      this.socket = io(API_URL, {
         transports: ['websocket'],
       });
 
